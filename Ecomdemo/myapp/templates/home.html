@@ -4,6 +4,14 @@
     <title>My First Django Page</title>
   </head>
   <body>
-    <h1>Welcome to Django</h1>
+    <h1>Welcome, {{name}}</h1>
+    <p>Your age is {{age}}</p>
+
+    <h2>Your Skills:</h2>
+    <ul>
+      {% for skill in skills %}
+      <li>{{ skill }}</li>
+      {% endfor %}
+    </ul>
   </body>
 </html>
